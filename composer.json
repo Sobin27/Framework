@@ -1,0 +1,20 @@
+{
+    "name": "sobre/framework",
+    "description": "Estudo de MVC",
+    "autoload": {
+        "psr-4": {
+            "Sobre\\Framework\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sob",
+            "email": "udreakjogos2@gmail.com"
+        }
+    ],
+    "require": {},
+
+    "autoload-dev": {
+        "App\\": "App/"
+    }
+}

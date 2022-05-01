@@ -1,9 +1,10 @@
 <?php
 include './../config.php';
-include './../App/Libraries/Router.php';
-include './../App/Libraries/Controller.php';
-include './../App/Libraries/Database.php';
+include './vendor/autoload.php';
+
 $db = new Database();
+
+
 ?>
 
 <!DOCTYPE html>
