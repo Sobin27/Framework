@@ -6,10 +6,20 @@ namespace Composer\Autoload;
 
 class ComposerStaticInitfe6554a68ed1e4c446dd787bd96c640e
 {
+    public static $files = array (
+        '060e666665ef4dc1476179eb8d42b21b' => __DIR__ . '/../..' . '/App/Libraries/Database.php',
+        '96ed2995f83d3196d5b201f40e1f0cd8' => __DIR__ . '/../..' . '/App/Libraries/Router.php',
+        '33c05dffad3307102566d7938a296525' => __DIR__ . '/../..' . '/App/Libraries/Controller.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
         'S' => 
         array (
             'Sobre\\Framework\\' => 16,
+        ),
+        'A' => 
+        array (
+            'App\\' => 4,
         ),
     );
 
@@ -17,6 +27,10 @@ class ComposerStaticInitfe6554a68ed1e4c446dd787bd96c640e
         'Sobre\\Framework\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
+        ),
+        'App\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/App',
         ),
     );
 

@@ -1,6 +1,6 @@
 <?php
 include './../config.php';
-include './vendor/autoload.php';
+include './../vendor/autoload.php';
 
 $db = new Database();
 

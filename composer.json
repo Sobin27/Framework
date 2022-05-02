@@ -12,9 +12,18 @@
             "email": "udreakjogos2@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+
+    },
 
     "autoload-dev": {
-        "App\\": "App/"
+        "psr-4": {
+            "App\\": "App/"
+        },
+        "files": [
+            "App/Libraries/Database.php",
+            "App/Libraries/Router.php",
+            "App/Libraries/Controller.php"
+        ]
     }
 }

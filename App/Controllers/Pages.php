@@ -4,6 +4,7 @@ class Pages extends Controller
 {
     public function __construct()
     {
+
         $dados = [
             'titulo' => 'Página Inicial'
         ];
