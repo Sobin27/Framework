@@ -27,11 +27,11 @@
                     <?= $dados['senha_error']?>
                 </div>
                 <div class="form-group">
-                    <label for="nome">Numero <sup class="text-danger">*</sup></label>
-                    <input type="text" name="numero" class="form-control  <?= $dados['numero_error'] ? 'is-invalid' : ''?>" value="<?= $dados['celular']?>" >
+                    <label for="nome">Celular <sup class="text-danger">*</sup></label>
+                    <input type="text" name="celular" class="form-control  <?= $dados['celular_error'] ? 'is-invalid' : ''?>" value="<?= $dados['celular']?>" >
                 </div>
                 <div class="invalid-feedback">
-                    <?= $dados['numero_error']?>
+                    <?= $dados['celular_error']?>
                 </div>
 
                 <div class="row">

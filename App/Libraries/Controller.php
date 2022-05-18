@@ -1,10 +1,12 @@
 <?php
 
+// namespace App\Libraries;
+
 class Controller
 {
     public function model($model)
     {
-        require_once '../App/Models' . $model . '.php';
+        require_once '../App/Models/' . $model . '.php';
         return new $model;
     }
 

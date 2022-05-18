@@ -1,9 +1,16 @@
 <?php
 include './../config.php';
 include './../vendor/autoload.php';
+use App\Libraries\Database;
+
 
 $db = new Database();
-
+$db->query("INSERT INTO cadastro(nome,email,celular,senha) VALUES(:nom,:em,:cell,:pass)");
+$db->bind("nom","Sobeira");
+$db->bind("em","Sobeira");
+$db->bind("cell","123");
+$db->bind("pass","Sobeira");
+$db->execute();
 
 ?>
 

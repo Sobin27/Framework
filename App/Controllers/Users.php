@@ -1,9 +1,22 @@
 <?php
 
+// namespace App\Controllers;
+
+// use App\Libraries\Controller;
+use App\Models\Usuario;
 use App\Helpers\Check;
 
 class Users extends Controller
 {
+
+    private $UserModel;
+
+    public function __construct()
+    {
+        $this->UserModel = new Usuario;
+    }
+
+
     public function cadastrar()
     {
         $forms = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
@@ -14,7 +27,7 @@ class Users extends Controller
                 'nome' => trim($forms['nome']),
                 'email' => trim($forms['email']),
                 'senha' => trim(password_hash($forms['senha'], PASSWORD_DEFAULT)),
-                'celular' => trim($forms['numero']),
+                'celular' => trim($forms['celular']),
             ];
             if(in_array("", $forms))
             {
@@ -44,6 +57,12 @@ class Users extends Controller
                     $dados['email_error'] = 'Preencha o campo email.';
                 }else{
 
+                    if($this->UserModel->store($dados))
+                    {
+                        echo "cadastrado com sucesso";
+                    }else{
+                        die('deu merda');
+                    }
                 }
             }
 

@@ -1,5 +1,9 @@
 <?php
 
+namespace App\Libraries;
+Use PDO;
+Use PDOException;
+
 class Database
 {
     private $host = 'localhost';
